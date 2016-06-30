@@ -84,6 +84,26 @@
     <script src="./htmlapp-build.min.js"></script>
 
     <script>
+      var a;
+
+      hpm.fetch('htmlapp','b_htmlapp','htmlapp.html')
+      .then(function(){ return hpm.fetch('htmlapp','b_htmlapp','htmlapp.css'); })
+      .then(function(){ return hpm.fetch('htmlapp','b_htmlapp','htmlapp.js'); })
+      .then(function(){
+        // Need to fix hpm.create so it looks inside v for this to work
+        return hpm.fetch('htmlapp','b_htmlapp','htmlapp.json');
+      })
+      .then(function(){ return hpm.create("htmlapp.json", "htmlapp.html", "htmlapp.css", "htmlapp.js"); })
+      .then(function(){
+        a = new Htmlapp();
+        return a.init()
+      })
+      .then(function(){ return a.load("htmlapp-0.0.1"); })
+      .then(function(){ return a.show("htmlapp"); })
+
+    </script>
+
+    <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

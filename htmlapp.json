@@ -1,0 +1,8 @@
+{
+	   "name": "htmlapp",
+	    "description": "htmlapp.io website" ,
+	    "version": "0.0.1" ,
+	    "private": false,
+	    "permissions": null ,
+	    "dependecies": "None"
+}
