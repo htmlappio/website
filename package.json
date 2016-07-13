@@ -1,0 +1,24 @@
+{
+  "name": "htmlappio-website",
+  "version": "0.0.1",
+  "description": "",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-serve": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlappio/website.git"
+  },
+  "author": "Jonas Comsjö",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/htmlappio/website/issues"
+  },
+  "homepage": "https://github.com/htmlappio/website#readme"
+}
