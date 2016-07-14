@@ -4,7 +4,9 @@
   "description": "",
   "main": "Gulpfile.js",
   "dependencies": {
+    "cors": "^2.7.1",
     "gulp": "^3.9.1",
+    "gulp-connect": "^4.1.0",
     "gulp-serve": "^1.4.0"
   },
   "devDependencies": {},
